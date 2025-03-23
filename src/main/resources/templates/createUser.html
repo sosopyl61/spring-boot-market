@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create user</title>
+</head>
+<body>
+<h2>Create user</h2>
+<form th:action="@{/user/create}" method="POST">
+  <div>
+    <label for="firstname">First name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+  </div>
+
+  <div>
+    <label for="secondName">Second name:</label>
+    <input type="text" id="secondName" name="secondName" required>
+  </div>
+
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div>
+    <label for="sex">Sex:</label>
+    <input type="text" id="sex" name="sex" required>
+  </div>
+
+  <div>
+    <label for="telephoneNumber">Telephone number:</label>
+    <input type="text" id="telephoneNumber" name="telephoneNumber" required>
+  </div>
+  <button type="submit">Create user</button>
+</form>
+</body>
+</html>
